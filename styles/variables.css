@@ -1,0 +1,13 @@
+:root {
+  --main-ff: "Inter-Variable", "Arial", sans-serif;
+  --fw-normal: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+  --main-color: #111419;
+  --secondary-color: #fff;
+  --btn-color: #bf1111;
+  --input-color-text: #636363;
+  --border-color: #eeecec;
+  --input-color: #ebebeb;
+}
