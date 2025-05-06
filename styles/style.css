@@ -96,9 +96,9 @@
   outline: 1px solid var(--input-color);
 }
 
-.hero-input:invalid {
+/* .hero-input:invalid {
   border: 1px solid var(--btn-color);
-}
+} */
 
 .hero-button {
   min-width: 196px;
@@ -635,9 +635,9 @@
   outline: 1px solid var(--input-color);
 }
 
-.covers__form-form-input:invalid {
+/* .covers__form-form-input:invalid {
   border: 1px solid var(--btn-color);
-}
+} */
 
 .covers__form-button {
   margin-block-start: 20px;
