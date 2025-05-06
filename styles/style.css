@@ -198,7 +198,7 @@
 }
 
 .catalog__list-item:nth-child(2) {
-  background: url("../img/card-2_foto.webp") no-repeat center/cover;
+  background: url("../img/Card-2_foto.webp") no-repeat center/cover;
 }
 
 .catalog__list-item:nth-child(3),
@@ -227,15 +227,15 @@
 }
 
 .catalog__list-item:nth-child(4) {
-  background: url("../img/card-4_foto.webp") no-repeat center/cover;
+  background: url("../img/Card-4_foto.webp") no-repeat center/cover;
 }
 
 .catalog__list-item:nth-child(6) {
-  background: url("../img/card-6_foto.webp") no-repeat center/cover;
+  background: url("../img/Card-6_foto.webp") no-repeat center/cover;
 }
 
 .catalog__list-item:nth-child(7) {
-  background: url("../img/card-7_foto.webp") no-repeat center/cover;
+  background: url("../img/Card-7_foto.webp") no-repeat center/cover;
 }
 
 .catalog__list-item-title {
