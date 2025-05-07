@@ -1,7 +1,3 @@
-/* * {
-  border: 4px solid green;
-} */
-
 .page {
   font-family: var(--main-ff);
   color: var(--main-color);
@@ -38,7 +34,7 @@
 
 .hero__title {
   padding-block-start: 134px;
-  font-size: 50px;
+  font-size: clamp(1.75rem, 1.3995rem + 1.4379vw, 3.125rem);
   font-weight: var(--fw-bold);
   line-height: 120%;
   color: var(--secondary-color);
@@ -49,7 +45,7 @@
 }
 
 .hero__request-title {
-  font-size: 20px;
+  font-size: clamp(0.9375rem, 0.8578rem + 0.3268vw, 1.25rem);
   font-weight: var(--fw-medium);
   line-height: 100%;
   color: var(--secondary-color);
@@ -114,6 +110,7 @@
 .recommendations__cards {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   gap: 65px;
 }
 
@@ -147,7 +144,7 @@
 }
 
 .recommendations__card-title {
-  font-size: 24px;
+  font-size: clamp(0.75rem, 0.5588rem + 0.7843vw, 1.5rem);
   font-weight: var(--fw-semibold);
   line-height: 100%;
 }
@@ -159,7 +156,7 @@
 }
 
 .recommendations__card-text {
-  font-size: 14px;
+  font-size: clamp(0.4375rem, 0.326rem + 0.4575vw, 0.875rem);
   font-weight: var(--fw-normal);
 }
 
@@ -170,7 +167,7 @@
 }
 
 .section__title {
-  font-size: 36px;
+  font-size: clamp(1.5625rem, 1.3873rem + 0.719vw, 2.25rem);
   font-weight: var(--fw-semibold);
   text-align: center;
 }
@@ -179,6 +176,7 @@
   padding-block-start: 52px;
   display: grid;
   grid-template-columns: repeat(4, 304px);
+  justify-content: center;
   grid-gap: 20px;
 }
 
@@ -211,7 +209,7 @@
   content: "";
   position: absolute;
   background: url("../img/orig-_3_-Photoroom-1.webp") no-repeat;
-  width: 340px;
+  width: 275px;
   height: 240px;
   bottom: -15px;
 }
@@ -239,7 +237,9 @@
 }
 
 .catalog__list-item-title {
-  font-size: 24px;
+  display: block;
+  padding-block-end: 172px;
+  font-size: clamp(1.125rem, 1.0294rem + 0.3922vw, 1.5rem);
   font-weight: var(--fw-medium);
   color: var(--secondary-color);
 }
@@ -249,7 +249,6 @@
 }
 
 .catalog__list-item-btn {
-  margin-block-start: 172px;
   min-width: 115px;
   height: 46px;
 }
@@ -268,15 +267,16 @@
 
 .section__subtitle {
   padding-block-start: 12px;
-  font-size: 16px;
+  font-size: clamp(0.75rem, 0.6863rem + 0.2614vw, 1rem);
   font-weight: var(--fw-normal);
   text-align: center;
 }
 
 .marks__cards {
-  padding-block-start: 25px;
+  padding-block: 25px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
 }
 
@@ -308,7 +308,6 @@
 }
 
 .marks__button {
-  margin-block-start: 24px;
   min-width: 127px;
   height: 46px;
 }
@@ -325,7 +324,7 @@
 }
 
 .tailoring__widget-title {
-  font-size: 36px;
+  font-size: clamp(1.5rem, 1.3088rem + 0.7843vw, 2.25rem);
   font-weight: var(--fw-semibold);
   color: var(--secondary-color);
 }
@@ -333,7 +332,7 @@
 .tailoring__widget-subtitle {
   display: block;
   padding-block-start: 24px;
-  font-size: 16px;
+  font-size: clamp(0.75rem, 0.6863rem + 0.2614vw, 1rem);
   font-weight: var(--fw-normal);
   color: var(--secondary-color);
 }
@@ -344,7 +343,7 @@
 }
 
 .tailoring__widget-item {
-  font-size: 16px;
+  font-size: clamp(0.75rem, 0.6863rem + 0.2614vw, 1rem);
   font-weight: var(--fw-normal);
   color: var(--secondary-color);
 }
@@ -368,7 +367,7 @@
 }
 
 .portfolio__cards {
-  padding-block-start: 28px;
+  padding: 28px 0 24px 0;
   display: grid;
   grid-template-columns: repeat(4, 304px);
   grid-gap: 20px;
@@ -385,7 +384,6 @@
 }
 
 .portfolio__button {
-  margin-block-start: 24px;
   min-width: 302px;
   height: 46px;
 }
@@ -398,17 +396,19 @@
 }
 
 .reviews__content {
-  padding-block-start: 34px;
+  padding-block: 34px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .reviews__list {
-  padding-block-start: 28px;
+  padding: 28px 0 24px 0;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 20px;
 }
 
@@ -473,7 +473,6 @@
 }
 
 .reviews__button {
-  margin: 24px 0 34px;
   min-width: 235px;
   height: 46px;
 }
@@ -491,7 +490,7 @@
 }
 
 .cardealership__title {
-  font-size: 36px;
+  font-size: clamp(1.5625rem, 1.3873rem + 0.719vw, 2.25rem);
   font-weight: var(--fw-semibold);
   line-height: 100%;
 }
@@ -502,7 +501,7 @@
 
 .cardealership__text {
   padding-block-start: 18px;
-  font-size: 16px;
+  font-size: clamp(0.75rem, 0.6863rem + 0.2614vw, 1rem);
   font-weight: var(--fw-normal);
   line-height: 120%;
 }
@@ -551,7 +550,7 @@
 }
 
 .covers__title {
-  font-size: 36px;
+  font-size: clamp(1.5rem, 1.3088rem + 0.7843vw, 2.25rem);
   font-weight: var(--fw-semibold);
   line-height: 100%;
   color: var(--secondary-color);
@@ -560,7 +559,7 @@
 .covers__subtitle {
   display: block;
   padding-block-start: 12px;
-  font-size: 16px;
+  font-size: clamp(0.75rem, 0.6863rem + 0.2614vw, 1rem);
   font-weight: var(--fw-normal);
   line-height: 120%;
   color: var(--secondary-color);
@@ -575,20 +574,22 @@
 }
 
 .covers__list-item {
-  font-size: 16px;
+  font-size: clamp(0.75rem, 0.6863rem + 0.2614vw, 1rem);
   font-weight: var(--fw-normal);
   line-height: 100%;
   color: var(--secondary-color);
 }
 
 .covers__form {
-  padding: 48px 45px 49px 38px;
+  width: 471px;
+  height: 440px;
+  padding: 48px 0 0 38px;
   background-color: var(--secondary-color);
   border-radius: 6px;
 }
 
 .covers__form-title {
-  font-size: 28px;
+  font-size: clamp(1.5rem, 1.4363rem + 0.2614vw, 1.75rem);
   font-weight: var(--fw-semibold);
   line-height: 100%;
 }
@@ -596,7 +597,7 @@
 .covers__form-subtitle {
   display: block;
   padding-block-start: 6px;
-  font-size: 16px;
+  font-size: clamp(0.75rem, 0.6863rem + 0.2614vw, 1rem);
   font-weight: var(--fw-normal);
   line-height: 100%;
 }
@@ -651,10 +652,18 @@
   padding-block-start: 120px;
 }
 
+.contacts__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .contacts__cards {
   padding-block-start: 54px;
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 20px;
 }
 
@@ -671,7 +680,7 @@
 .contacts__cards-item-name {
   display: block;
   padding-block-start: 24px;
-  font-size: 24px;
+  font-size: clamp(1.125rem, 1.0294rem + 0.3922vw, 1.5rem);
   font-weight: var(--fw-semibold);
   line-height: 100%;
   text-align: center;
@@ -680,7 +689,7 @@
 .contacts__cards-item-info {
   display: block;
   padding-block-start: 18px;
-  font-size: 16px;
+  font-size: clamp(0.875rem, 0.8431rem + 0.1307vw, 1rem);
   font-weight: var(--fw-normal);
   line-height: 120%;
   text-align: center;
@@ -688,7 +697,7 @@
 
 .map {
   margin: 44px 0 120px;
-  width: 1279px;
+  width: clamp(320px, 90vw, 1279px);
   height: 539px;
   background-color: var(--btn-color);
 }
@@ -704,6 +713,7 @@
   padding-block-start: 54px;
   display: flex;
   flex-direction: row;
+  justify-content: center;
   gap: 161px;
 }
 
@@ -721,11 +731,10 @@
 
 .footer__content-covers-span {
   display: block;
-  padding-block-start: 12px;
+  padding: 12px 0 24px 0;
 }
 
 .footer__content-covers-button {
-  margin-block-start: 24px;
   min-width: 167px;
   height: 46px;
 }
@@ -832,4 +841,242 @@
   font-size: 16px;
   font-weight: var(--fw-normal);
   color: var(--input-color-text);
+}
+
+@media (width <= 1280px) {
+  .container {
+    padding-inline: 20px;
+  }
+
+  .hero-input {
+    min-width: 400px;
+  }
+
+  .recommendations__cards {
+    flex-wrap: wrap;
+  }
+
+  .catalog__list {
+    grid-template-columns: repeat(3, 304px);
+  }
+
+  .portfolio__cards {
+    grid-template-columns: repeat(3, 304px);
+  }
+
+  .portfolio__cards-item:nth-child(5) {
+    display: none;
+  }
+
+  .reviews__list {
+    align-items: normal;
+  }
+}
+
+@media (width <= 1140px) {
+  .cardealership__content {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .cardealership__left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cardealership__text {
+    text-align: center;
+  }
+
+  .cardealership__list {
+    justify-content: center;
+  }
+
+  .footer__content-left {
+    flex-direction: column;
+  }
+
+  .footer__content-right {
+    flex-direction: column;
+  }
+
+  .footer__prefooter {
+    align-items: center;
+  }
+}
+
+@media (width <= 1080px) {
+  .hero-form {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .catalog__list {
+    grid-template-columns: repeat(2, 304px);
+  }
+
+  .portfolio__cards {
+    grid-template-columns: repeat(2, 304px);
+  }
+
+  .covers__content {
+    gap: 150px;
+    justify-content: center;
+  }
+
+  .covers__form {
+    width: 440px;
+    padding: 48px 0 0 25px;
+  }
+}
+
+@media (width <= 850px) {
+  .covers__content {
+    gap: 40px;
+  }
+}
+
+@media (width <= 825px) {
+  .recommendations {
+    display: none;
+  }
+
+  .cardealership__list-item:nth-child(3) {
+    display: none;
+  }
+}
+
+@media (width <= 720px) {
+  .covers__content {
+    flex-direction: column;
+  }
+
+  .catalog__list {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .catalog__list-item {
+    width: 425px;
+  }
+
+  .catalog__list-item:nth-child(1) {
+    width: 420px;
+    grid-column: span 1;
+  }
+
+  .catalog__list-item:nth-child(3)::before {
+    right: 0;
+  }
+
+  .catalog__list-item:nth-child(5)::before {
+    width: 285px;
+    right: 0;
+  }
+
+  .portfolio__cards {
+    grid-template-columns: 1fr;
+  }
+
+  .portfolio__cards-item:nth-child(1) {
+    display: none;
+  }
+
+  .footer__content {
+    flex-direction: column;
+    gap: 100px;
+    align-items: center;
+  }
+
+  .footer__content-left {
+    align-items: center;
+  }
+
+  .footer__content-right {
+    flex-direction: row;
+  }
+}
+
+@media (width <= 520px) {
+  .hero-input {
+    min-width: 330px;
+  }
+
+  .footer__content-right {
+    flex-direction: column;
+    gap: 75px;
+  }
+
+  .reviews__list-item {
+    width: 360px;
+  }
+
+  .cardealership__list-item-img:nth-child(1) {
+    width: 300px;
+  }
+
+  .covers__form {
+    width: 360px;
+  }
+
+  .covers__form-form-input {
+    width: 315px;
+  }
+
+  .contacts__cards-item {
+    width: 350px;
+  }
+}
+
+@media (width <= 430px) {
+  .catalog__list-item,
+  .catalog__list-item:nth-child(1) {
+    width: 320px;
+  }
+
+  .catalog__list-item:nth-child(3)::before {
+    width: 225px;
+  }
+
+  .catalog__list-item:nth-child(5)::before {
+    width: 264px;
+    right: 0;
+  }
+
+  .tailoring__widget {
+    padding: 52px 0 53px 25px;
+  }
+
+  .contacts__cards-item {
+    width: 320px;
+  }
+
+  .covers__form {
+    width: 320px;
+  }
+
+  .covers__form-form-input {
+    width: 280px;
+  }
+}
+
+@media (width <= 370px) {
+  .hero-input {
+    min-width: 290px;
+  }
+}
+
+@media (width <= 360px) {
+  .reviews__list-item {
+    width: 315px;
+  }
+
+  .reviews__list-item-star {
+    width: 20px;
+    height: 20px;
+  }
 }
